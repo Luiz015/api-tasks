@@ -82,7 +82,7 @@ Cada tarefa possui os seguintes atributos:
 ### Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/Luiz015/api-tasks
 ```
 
 ### Entrar na pasta do projeto
