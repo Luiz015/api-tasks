@@ -37,12 +37,12 @@ public class TaskController {
         return ResponseEntity.noContent().build();
     }
 
-    @GetMapping
+    @GetMapping("/tasks/titulo")
     public ResponseEntity<Task> buscarTaskTitulo(@RequestParam String titulo){
         return ResponseEntity.ok().body(taskService.buscarTaskTitulo(titulo));
     }
 
-    @GetMapping 
+    @GetMapping("/tasks/status") 
     public ResponseEntity<List<Task>> buscarTaskStatus(@RequestParam StatusTask status){
         return ResponseEntity.ok().body(taskService.buscarTaskStatus(status));
     }
