@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.luiz.tasks.business.TaskService;
 import com.luiz.tasks.business.enums.StatusTask;
-import com.luiz.tasks.infraestructure.entity.Task;
+import com.luiz.tasks.business.services.TaskService;
+import com.luiz.tasks.infrastructure.entity.Task;
 
 import lombok.RequiredArgsConstructor;
 

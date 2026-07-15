@@ -1,4 +1,4 @@
-package com.luiz.tasks.infraestructure.entity;
+package com.luiz.tasks.infrastructure.entity;
 
 import java.time.LocalDateTime;
 

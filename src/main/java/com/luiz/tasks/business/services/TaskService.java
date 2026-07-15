@@ -1,4 +1,4 @@
-package com.luiz.tasks.business;
+package com.luiz.tasks.business.services;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -8,8 +8,8 @@ import java.util.Objects;
 import org.springframework.stereotype.Service;
 
 import com.luiz.tasks.business.enums.StatusTask;
-import com.luiz.tasks.infraestructure.entity.Task;
-import com.luiz.tasks.infraestructure.repository.TaskRepository;
+import com.luiz.tasks.infrastructure.entity.Task;
+import com.luiz.tasks.infrastructure.repository.TaskRepository;
 
 import lombok.RequiredArgsConstructor;
 
