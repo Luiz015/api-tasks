@@ -64,6 +64,9 @@ public class TaskService {
         tarefa.setDescricao(task.getDescricao());
         tarefa.setStatus(task.getStatus());
         tarefa.setDataConclusao(task.getDataConclusao());
+        if (tarefa.getStatus() == StatusTask.CONCLUIDA) {
+            tarefa.setDataConclusao(LocalDateTime.now());
+        }
 
         return taskRepository.save(tarefa);
     }
