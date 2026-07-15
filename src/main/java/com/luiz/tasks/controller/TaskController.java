@@ -37,18 +37,18 @@ public class TaskController {
         return ResponseEntity.noContent().build();
     }
 
-    @GetMapping("/tasks/titulo")
+    @GetMapping("/titulo")
     public ResponseEntity<Task> buscarTaskTitulo(@RequestParam String titulo){
         return ResponseEntity.ok().body(taskService.buscarTaskTitulo(titulo));
     }
 
-    @GetMapping("/tasks/status") 
+    @GetMapping("/status") 
     public ResponseEntity<List<Task>> buscarTaskStatus(@RequestParam StatusTask status){
         return ResponseEntity.ok().body(taskService.buscarTaskStatus(status));
     }
 
     @PutMapping
-    public ResponseEntity<Task> atualizarTask(@RequestParam String titulo, @RequestParam Task task){
+    public ResponseEntity<Task> atualizarTask(@RequestParam String titulo, @RequestBody Task task){
         return ResponseEntity.accepted().body(taskService.atualizarTask(titulo, task));
     }
 
